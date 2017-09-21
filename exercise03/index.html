@@ -19,11 +19,50 @@
             
             document.getElementById("equation").innerHTML = x + " plus " + y + " equals " + answer +"!";
         }
+        function subtractNumbers() {
+            var x;
+            var y;
+            var answer;
+            x = 13;
+            alert(x);
+            y = 7;
+            alert(y);
+            answer = x - y;
+            alert(answer);
+            document.getElementById("equation").innerHTML = x + " minus " + y + " equals " + answer +"!";
+        }
+         function multiplyNumbers() {
+            var x;
+            var y;
+            var answer;
+            x = 13;
+            alert(x);
+            y = 7;
+            alert(y);
+            answer = x * y;
+            alert(answer);
+            document.getElementById("equation").innerHTML = x + " times " + y + " equals " + answer +"!";
+        }
+         function divideNumbers() {
+            var x;
+            var y;
+            var answer;
+            x = 13;
+            alert(x);
+            y = 7;
+            alert(y);
+            answer = x / y;
+            alert(answer);
+            document.getElementById("equation").innerHTML = x + " divided by " + y + " equals " + answer +"!";
+        }
     </script>
     
     <p id="equation"></p>
     <form name="calculator" action="#" method="get">
         <p><input type="button" id="add" name="add" value="Add" onclick="addNumbers();"></p>
+        <p><input type="button" id="subtract" name="subtract" value="Subtract" onclick="subtractNumbers();"></p>
+        <p><input type="button" id="multiply" name="multiply" value="Multiply" onclick="multiplyNumbers();"></p>
+        <p><input type="button" id="divide" name="divide" value="Divide" onclick="divideNumbers();"></p>
         
     </form>
     
