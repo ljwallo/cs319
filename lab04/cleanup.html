@@ -11,13 +11,23 @@
         var first;
         var middle;
         var last;
-        first = document.getElementById(first)
+        var full;
+        first = document.getElementById("firstName").value;
+        middle = document.getElementById("middleName").value;
+        last = document.getElementById("lastName").value;
+        full = document.getElementById("first + middle + last").value;
+           
+        first + firstName.trim();
+        middle + middleName.trim();
+        last + lastName.trim();
+        full + fullName.trim();
+             document.name.fullName.value = (first + " " + middle + " " + last);
         }
         </script>
-        <form name="fullName" action="#" method="get">
+        <form id= "name" name="name" action="#" method="get">
         <p>First Name: <br><input type="text" name="firstName" id="firstName"></p>
         <p>Middle Name: <br> <input type="text" name="middleInitial" id="middleInitial"></p>
-        <p>Last Name: <br><input type="text" name="middleInitial" id="lastName"></p>
+        <p>Last Name: <br><input type="text" name="lastName" id="lastName"></p>
         <br>            
         <input type="button" name="cleanupName" id="cleanupName" value="Cleanup Name" onclick="cleanupName();">
         <p>Full Name: <br> <input type="text" name="fullName" id="fullName"></p>
