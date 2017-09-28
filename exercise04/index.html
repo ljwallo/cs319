@@ -5,11 +5,16 @@
     <meta charset="utf-8">
     </head>
     <body>
-    <form name="example" id="example" action="#" method="get">>
+        <script>
+            
+            document.getElementById("example").innerHTML = "Hello my name is " + exampleText + " and I have " + exampleNumber + " " + selectexample + "!";
+            
+        </script>
+    <form name="example" id="example" action="#" method="get">
         <p>Name: <input type="text" name="exampleText" id="exampleText"></p>
         <p>Number: <input type="number" name="exampleNumber" id="exampleNumber"></p>
         <p>Color:</p>
-            <input type="radio" name="blue" value="bllue">Blue <br>
+            <input type="radio" name="blue" value="blue">Blue <br>
             <input type="radio" name="purple" value="purple">Purple <br> 
             <input type="radio" name="black" value="black">Black <br>
         <p>Animal: </p>
