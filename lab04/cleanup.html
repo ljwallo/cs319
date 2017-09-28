@@ -7,29 +7,35 @@
     <body>
     <h1>Name Cleanup</h1>
     <script>
-        function cleanupName(){
+        function nameCleanup(){
         var first;
         var middle;
         var last;
         var full;
         first = document.getElementById("firstName").value;
-        middle = document.getElementById("middleName").value;
+        middle = document.getElementById("middleInitial").value;
         last = document.getElementById("lastName").value;
-        full = document.getElementById("first + middle + last").value;
+        //full = document.getElementById("first + middle + last").value;
            
-        first + firstName.trim();
-        middle + middleName.trim();
-        last + lastName.trim();
-        full + fullName.trim();
-             document.name.fullName.value = (first + " " + middle + " " + last);
+        first + first.trim();
+        middle + middle.trim();
+        last + last.trim();
+        //full = full.trim();
+            
+        first + first.toUpperCase();
+        middle + middle.toUpperCase();
+        last + last.toUpperCase();
+        //full = full.toUpperCase();
+            
+             document.cleanup.fullName.value = first + " " + middle + " " + last;
         }
         </script>
-        <form id= "name" name="name" action="#" method="get">
+        <form id= "cleanup" name="cleanup" action="#" method="get">
         <p>First Name: <br><input type="text" name="firstName" id="firstName"></p>
         <p>Middle Name: <br> <input type="text" name="middleInitial" id="middleInitial"></p>
         <p>Last Name: <br><input type="text" name="lastName" id="lastName"></p>
         <br>            
-        <input type="button" name="cleanupName" id="cleanupName" value="Cleanup Name" onclick="cleanupName();">
+        <input type="button" name="cleanupName" id="cleanupName" value="Cleanup Name" onclick="nameCleanup();">
         <p>Full Name: <br> <input type="text" name="fullName" id="fullName"></p>
             </form>
     </body>    
