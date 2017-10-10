@@ -6,56 +6,58 @@
     </head>
     <body>
         <script>
-            function submit() {
+            function enter() {
                 var input = document.getElementById("example").value;
                 input = input.trim();
-                if (input = 1)
+                input = parseInt(input);
+                if (input > 12) {
+                    alert("Does not correspond to a month");
+                    }                
+                    else if (input == 1)
                     {alert("January");
                     }
-                    else if (input = 2) {
+                    else if (input == 2) {
                         alert("February");
                     }
-                    else if (input = 3) {
+                    else if (input == 3) {
                         alert("March");
                     }
                     
-                    else if (input = 4) {
+                    else if (input == 4) {
                         alert("April");
                     }
-                    else if (input = 5) {
+                    else if (input == 5) {
                         alert("May");
                     }
                     
-                    else if (input = 6) {
+                    else if (input == 6) {
                         alert("June");
                     }
-                    else if (input = 7) {
+                    else if (input == 7) {
                         alert("July");
                     }
-                    else if (input = 8) {
+                    else if (input == 8) {
                         alert("August");
                     }
-                    else if (input = 9) {
+                    else if (input == 9) {
                         alert("September");
                     }
                     
-                    else if (input = 10) {
+                    else if (input == 10) {
                         alert("October");}
                 
-                    else if (input = 11) {
+                    else if (input == 11) {
                         alert("November");}
                 
-                  else if (input = 12) {
+                  else if (input == 12) {
                         alert("December");}
-                else if (input > 12) {
-                    alert("Does not correspond to a month");
-                }
+
             }
         </script>
     
         <form name="example" id="example" action="#" method="get">
                     <p>Month Number: <input type="number" name="exampleNumber" id="exampleNumber"></p>
-                      <p><input type="button" name="submit" id="submit" value="Submit" onclick="submit();"></p>
+                      <p><input type="button" name="enter" id="submit" value="Submit" onclick="enter();"></p>
         </form>
             </body>       
 </html>
