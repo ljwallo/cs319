@@ -8,12 +8,18 @@
         <script>
             function whichRadio()
             {
-            var
-            var
-            var
-                alert(flower);
-                
-                
+            var input = document.getElementById("flowers").value;
+           
+                if (input == daisy && input || peony && input ||orchid)
+                    {
+                        alert("Daisy has been selected");
+                    }
+                else if (input == orchid && input || peony && input || daisy)
+                {alert("Orchid has been selected"); }
+                else if (input == peony && input || daisy && input ||orchid)
+                    {alert("Peony has been selected");}
+                   
+        
             }
         </script>
         <form name="flowers" id="flowers" action="#" method="get">
