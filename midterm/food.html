@@ -7,17 +7,19 @@
     <body>
         <script>
             function submitFood() {
-        
-                
-        ffood = document.getFood.ffood.value;
-        sfood = document.getFood.sfood.value;
+       var firstFood;
+       firstFood = document.getElementById("ffood").value;
+       var secondFood;
+       secondFood = document.getElementById("sfood").value;         
+        //ffood = document.getFood.ffood.value;
+        //sfood = document.getFood.sfood.value;
         
 
-        ffood = ffood.trim();
-        sfood = sfood.trim();
-        ffood = ffood.toLowerCase();
-        sfood = sfood.toLowerCase();
-        alert ("Your favorite foods are: " + ffood " and " + sfood + ".");
+        firstFood = firstFood.trim();
+        secondFood = secondFood.trim();
+        firstFood = firstFood.toLowerCase();
+        secondFood = secondFood.toLowerCase();
+alert ("Your favorite foods are: " + firstFood " and " + secondFood + ".");
             }
         </script>
         <form name="getFood" id="getFood" action="#" method="get">

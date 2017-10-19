@@ -8,14 +8,16 @@
         <script>
             function validateAge()
             {
-                var input = document.getElementById("checkAge").value;
-                if (input== ""){
+                var input = document.getElementById("age").value;
+                if (input== "")
+                {
                 
                     alert("You did not enter a valid age"); }
                     else {
                         alert(input);
+                         document.ageForm.ageInput.focus;
                     }
-                document.testForm.testInput.focus;
+               
             }
         </script>
         <form name="checkAge" id="checkAge" action="#" method="get">
