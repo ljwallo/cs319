@@ -6,12 +6,22 @@
     </head>
     <body>
         <script>
-            
+            function validateAge()
+            {
+                var input = document.getElementById("checkAge").value;
+                if (input== ""){
+                
+                    alert("You did not enter a valid age"); }
+                    else {
+                        alert(input);
+                    }
+                document.testForm.testInput.focus;
+            }
         </script>
         <form name="checkAge" id="checkAge" action="#" method="get">
             <p>How old are you?<br>
             <input type="text" name="age" id="age"></p>
-            <p><input type="submit" name="submit=" id="submit" value="Submit"></p>
+            <p><input type="submit" name="submit=" id="submit" value="Submit" onsubmit="validateAge();"></p>
         </form>
     </body>
 </html>

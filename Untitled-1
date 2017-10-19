@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unit 4 Exercise</title>
+		<meta charset="utf-8">
+		<script>
+			function tellStory() {
+				var name;
+				var number;
+				var color;
+				var animal;
+				var story;
+				
+				name = document.madlib.frmName.value;
+				number = document.madlib.frmNumber.value;
+				color = document.madlib.frmColor.value;
+				animal = document.madlib.frmAnimal.value;
+				
+				story = "Hello, my name is " + name + "! I have " + number + " wonderful " + color + " " + animal + "!";
+				
+				document.getElementById("story").innerHTML = story;
+			}
+		
+		</script>
+	</head>
+	<body>
+		<form id="madlib" name="madlib" action="#" method="get">
+			<p>Name: <input type="text" name="frmName" id="frmName"></p>
+			<p>Number: <input type="number" name="frmNumber" id="frmNumber"></p>
+			<p>Color:<br>
+			<input type="radio" name="frmColor" id="frmColorBlack" value="black"> Black<br>
+			<input type="radio" name="frmColor" id="frmColorBrown" value="brown"> Brown<br>
+			<input type="radio" name="frmColor" id="frmColorOrange" value="orange"> Orange</p>
+			<p>Animal (plural):<br>
+			<select id="frmAnimal" name="frmAnimal">
+				<option value="cats">Cats</option>
+				<option value="dogs">Dogs</option>
+				<option value="iguanas">Iguanas</option>
+			</select></p>
+			<p><input type="button" id="tellstory" name="tellstory" onclick="tellStory();" value="Tell story!"></p>
+		</form>
+		<hr>
+		<p id="story"></p>
+	</body>
+</html>
